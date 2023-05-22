@@ -42,7 +42,7 @@ needs recompiling after updating files
 ### S-Nomp upgrade:
 15) `su - pool`
 16) `cd s-nomp`
-17) `wget .../PBaaS-upgrade.tar.gz`
+17) `wget https://github.com/Oink70/s-nomp-pbaas-upgrade/releases/download/v0.0.1/PBaaS-upgrade.tar.gz`
 18) `tar -xvf PBaaS-upgrade.tar.gz`
 19) `npm rebuild --update-binary`
 
