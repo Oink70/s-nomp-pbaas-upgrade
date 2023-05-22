@@ -20,8 +20,8 @@ needs recompiling after updating files
  - libs/shareProcessor.js
  
 ## procedure (quick'n dirty):
- 1) shutdown pool
- 2) stop verus daemons
+ 1) shutdown pool and pm2 (`pm2 kill`)
+ 2) stop verus daemon(s)
 
 ### Verus changes:
  3) stop verus daemon
