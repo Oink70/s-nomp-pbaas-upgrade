@@ -48,3 +48,6 @@ needs recompiling after updating files
 20) `npm rebuild --update-binary`
 
 And start the pool.
+
+In case your pool doesn't accept miner connections, please restart the pool with `pm2 restart all -a`.
+
