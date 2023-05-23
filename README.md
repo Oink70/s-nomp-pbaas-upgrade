@@ -25,7 +25,7 @@ needs recompiling after updating files
 
 ### Verus changes:
  3) stop verus daemon
- 4) add `-miningdistribution='{"<FEE-ADDRESS>":5,"<MINING-ADDRESS>":95}' -mint -gen -genproclimit=0` to your VRSC daemon start command or add these entries in your `VRSC.conf`. (fill in your `<FEE-ADDRESS>`, `<MINING-ADDRESS>` and own percentages). If your fee address is **not** in the local wallet (advisable), you also need `-minetolocalwallet=0`
+ 4) add `miningdistribution='{"<FEE-ADDRESS>":5,"<MINING-ADDRESS>":95}'`, `mint=1`, `gen=1` and `genproclimit=0` to your `VRSC.conf`. (fill in your `<FEE-ADDRESS>`, `<MINING-ADDRESS>` and own percentages). If your fee address is **not** in the local wallet (advisable), you also need `minetolocalwallet=0`.
  5) edit the VRSC.conf file and change the `blocknotify=` line to contain the right node version (`v10.24.1`)
  6) Start verus daemon
  
