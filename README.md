@@ -52,3 +52,9 @@ And start the pool.
 
 In case your pool doesn't accept miner connections, please restart the pool with `pm2 restart all -a`.
 
+## Updated situation
+
+Since the writing of this upgrade guide and now, the https://github.com/BitGo repositories `blake2b` and `blake2b-wasm` have been made unavailable to the public (deleted or private).
+An updated `package-lock.json` is required.
+In this repo are now the `package-lock-update.diff`-file, which can be placed in the `~/s-nomp` directory and applied with `git apply package-lock-update.diff`, after which the node_modules need to be (re)built with `npm clean-install`.
+For those that did not adjust their `package-lock.json` file in the past, simply overwriting that file with the one here also works. After that build with `npm clean-install`.
